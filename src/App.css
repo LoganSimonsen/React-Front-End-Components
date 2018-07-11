@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.header1 {
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Welcome {
+  width: 40%;
+  height: 30%;
+  border: solid;
+  border-radius: 10px;
+  transition: margin 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+}
+
+.WelcomeWrap {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.WelcomeInner {
+  border-right: solid thin;
+  height: 80%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration-style: wavy;
+}
+
+.std-button {
+  color: white;
+  height: 80%;
+  width: 80%;
+  padding: 15px;
+  font-weight: bolder;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: transparent;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.std-button:hover {
+  background-color: rgb(70, 70, 230, .5);
+  color: white;
+  border: transparent;
+}
+
+.std-button:active {
+  background: hsl(240, 61%, 47%, .5);
+  color: white;
+  border: transparent;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  background: rgb(255, 255, 255, .3);
+  width: 100vw;
+}
+
+.listWrapper {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.optionsWrapper {
+  position: fixed;
+  z-index: 100;
+  top: 1%;
+  left: 1%;
+  height: 98vh;
+  width: 98vw;
+  background: rgb(255, 255, 255, .5);
+  color: rgb(70, 70, 230);
+  display: inline-flex;
+  transition: display 2s;
+  -webkit-transition: display 2s;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.optionBox {
+  margin: 5px;
+  width: 40vw;
+  height: 45%;
+  /* background: rgb(128, 128, 128, 0.3); */
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border: solid thick rgb(70, 70, 230);
+  border-radius: 10px;
+}
+
+.closeX {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.4em;
+  transition: font-size 1s;
+  -webkit-transition: font-size .5s;
+}
+
+.closeX:hover {
+  font-size: 1.7em;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
