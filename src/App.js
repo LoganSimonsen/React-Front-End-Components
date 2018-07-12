@@ -11,6 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         {window.location.hash === "#/" && <div>
+          <h2>Welcome to Red Rock Shipping</h2>
           <Intro />
         </div>}
         <div>

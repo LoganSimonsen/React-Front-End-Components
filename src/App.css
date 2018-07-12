@@ -26,8 +26,8 @@ a {
 }
 
 .Welcome {
-  width: 40%;
-  height: 30%;
+  width: 75%;
+  height: 45%;
   border: solid;
   border-radius: 10px;
   transition: margin 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.1);
@@ -117,13 +117,17 @@ a {
   margin: 5px;
   width: 40vw;
   height: 45%;
-  /* background: rgb(128, 128, 128, 0.3); */
   display: inline-flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   border: solid thick rgb(70, 70, 230);
   border-radius: 10px;
+  transition: border-color 1.5s;
+  -webkit-transition: border-color 1.5s;
+}
+.optionBox:hover {
+  border-color: white;
 }
 
 .closeX {
@@ -137,6 +141,41 @@ a {
 
 .closeX:hover {
   font-size: 1.7em;
+}
+
+table {
+  background: black;
+  margin: 0 auto;
+  text-align: left;
+}
+th,td {
+  border: solid thin black;
+  background-color: white;
+  color: black;
+  padding: 5px;
+}
+td:hover{
+  background-color: yellow;
+}
+
+.backButton {
+  position: fixed;
+  left: 1%;
+  top: 1%;
+  padding: 15px;
+  border-radius: 20px;
+  Background: black;
+  color: white;
+  transition: padding 1s;
+  -webkit-transition: padding 1s;
+  
+}
+.backButton:hover {
+  padding: 25px;
+}
+.backButton:active {
+  background: white;
+  color: black;
 }
 
 @keyframes App-logo-spin {
